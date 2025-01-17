@@ -6,7 +6,8 @@ import { SocksProxyAgent } from 'socks-proxy-agent';
 import fs from 'fs';
 import log from './utils/logger.js';
 import bedduSalama from './utils/banner.js';
-
+import keep_alive from './keep_alive.js';
+keep_alive();
 const headers = {
     "Accept": "application/json, text/plain, */*",
     "Accept-Encoding": "gzip, deflate, br, zstd",
